@@ -2,8 +2,8 @@ package com.company1.Day13_MaximumProblemUsingGenerics;
 
 public class Maximum {
 
-    public static Integer findMaximum(Integer a, Integer b, Integer c) {
-        Integer max = a;
+    public static Float findMaximum(Float a, Float b, Float c) {
+        Float max = a;
         if (b.compareTo(max)>0 && b.compareTo(c)>0) {
             max = b;
         }
@@ -15,8 +15,8 @@ public class Maximum {
 
     public static void main(String[] args) {
         System.out.println("Welcome Generics Maximum program");
-        Integer xInt = 6, yInt = 9, zInt = 13;
-        int getMax = Maximum.findMaximum(xInt,yInt,zInt);
+        Float xFloat = 6.3f, yFloat = 3.5f, zFloat = 6.9f;
+        Float getMax = Maximum.findMaximum(xFloat,yFloat,zFloat);
         System.out.print(getMax);
     }
 }
