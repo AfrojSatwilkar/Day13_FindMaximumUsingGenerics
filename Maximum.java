@@ -15,7 +15,7 @@ public class Maximum {
 
     public static void main(String[] args) {
         System.out.println("Welcome Generics Maximum program");
-        Integer xInt = 11, yInt = 9, zInt = 6;
+        Integer xInt = 6, yInt = 9, zInt = 5;
         int getMax = Maximum.findMaximum(xInt,yInt,zInt);
         System.out.print(getMax);
     }
