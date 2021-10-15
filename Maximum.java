@@ -7,9 +7,9 @@ public class Maximum {
         Float[] b = { 2.9f, 9.1f, 8.3f, 4.6f, 3.7f};
         String[] c = { "Peach", "Apple", "Banana", "Mango", "Grape" };
 
-        System.out.println(new Refactor1<Integer>(a).findMaximum());
-        System.out.println(new Refactor1<Float>(b).findMaximum());
-        System.out.println(new Refactor1<String>(c).findMaximum());
+        new Refactor1<Integer>(a).findMaximum();
+        new Refactor1<Float>(b).findMaximum();
+        new Refactor1<String>(c).findMaximum();
 
     }
 }

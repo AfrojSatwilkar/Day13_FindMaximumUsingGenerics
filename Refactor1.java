@@ -17,6 +17,11 @@ public class Refactor1<E extends Comparable> {
                 max = element;
             }
         }
+        printMax(max);
         return max;
     }
+    public static <E> void printMax(E max){
+        System.out.println("Maximum : "+max);
+    }
+
 }
