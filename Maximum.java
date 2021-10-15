@@ -2,8 +2,8 @@ package com.company1.Day13_MaximumProblemUsingGenerics;
 
 public class Maximum {
 
-    public static Integer findMaximum(Integer a, Integer b, Integer c) {
-        Integer max = a;
+    public static Float findMaximum(Float a, Float b, Float c) {
+        Float max = a;
         if (b.compareTo(max)>0 && b.compareTo(c)>0) {
             max = b;
         }
