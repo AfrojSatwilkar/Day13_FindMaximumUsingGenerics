@@ -3,12 +3,13 @@ package com.company1.Day13_MaximumProblemUsingGenerics;
 public class Maximum {
     public static void main(String[] args) {
         System.out.println("Welcome Generics Maximum program");
-        Integer xInt = 15, yInt = 9, zInt = 3;
-        Float xFloat = 6.2f, yFloat = 4.7f, zFloat = 7.6f;
-        String xString = "Apple", yString = "Peach", zString = "Banana";
+        Integer[] a = { 1, 2, 3, 4, 5 };
+        Float[] b = { 2.9f, 9.1f, 8.3f, 4.6f, 3.7f};
+        String[] c = { "Peach", "Apple", "Banana", "Mango", "Grape" };
 
-        new Refactor1(xInt,yInt,zInt).findMaximum();
-        new Refactor1(xFloat,yFloat,zFloat).findMaximum();
-        new Refactor1(xString,yString,zString).findMaximum();
+        System.out.println(new Refactor1<Integer>(a).findMaximum());
+        System.out.println(new Refactor1<Float>(b).findMaximum());
+        System.out.println(new Refactor1<String>(c).findMaximum());
+
     }
 }
