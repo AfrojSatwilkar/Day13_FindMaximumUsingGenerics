@@ -6,8 +6,8 @@ import org.junit.Test;
 public class MaximumTest {
     @Test
     public void intMax() {
-        int actualResult = Refactor1.findMaximum(9,10,5);
-        Assert.assertEquals(10,actualResult);
+        int actualResult = Refactor1.findMaximum(2,8,5);
+        Assert.assertEquals(8,actualResult);
     }
     @Test
     public void floatMax() {
