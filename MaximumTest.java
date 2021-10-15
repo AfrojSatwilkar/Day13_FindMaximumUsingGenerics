@@ -5,20 +5,18 @@ import org.junit.Test;
 
 public class MaximumTest {
     @Test
-    public void stringMax_AtFirstPosition() {
-        String actualResult = Maximum.findMaximum("Peach","Apple","Banana");
-        Assert.assertEquals("Peach",actualResult);
+    public void intMax() {
+        int actualResult = Refactor1.findMaximum(9,10,5);
+        Assert.assertEquals(10,actualResult);
     }
-
     @Test
-    public void stringMax_AtSecondPosition() {
-        String actualResult = Maximum.findMaximum("Apple","Peach","Banana");
-        Assert.assertEquals("Peach",actualResult);
+    public void floatMax() {
+        float actualResult = Refactor1.findMaximum(5.37f,8.25f,2.73f);
+        Assert.assertEquals(8.25f,actualResult,0.0);
     }
-
     @Test
-    public void stringMax_AtThirdPosition() {
-        String actualResult = Maximum.findMaximum("Apple","Banana","Peach");
+    public void stringMax() {
+        String actualResult = Refactor1.findMaximum("Apple","Banana","Peach");
         Assert.assertEquals("Peach",actualResult);
     }
 }
